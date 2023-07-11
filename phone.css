@@ -1,0 +1,354 @@
+@media (max-width: 630px) {
+  .main {
+    background-color: #000;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    padding: 0.5rem;
+  }
+  .sidebar {
+    width: 340px;
+    background-color: #000;
+    display: none;
+  }
+
+  .main-content {
+    /* flex: 1; */
+    border-radius: 1rem;
+    background-color: #212121;
+    margin: 0.3rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .music-player {
+    z-index: 1;
+    position: fixed;
+    background-color: yellow;
+    bottom: 0;
+    width: 100%;
+    height: 4rem;
+  }
+
+  .nav {
+    margin: 0.3rem;
+    background-color: #212121;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 8rem;
+    padding: 0 1rem;
+    border-radius: 1rem;
+  }
+
+  .nav-option {
+    line-height: 1.5rem;
+    display: flex;
+    align-items: center;
+    opacity: 0.7;
+    font-weight: 600;
+  }
+
+  .nav-option i {
+    color: #fff;
+    font-size: 1rem;
+    margin-left: 0.75rem;
+  }
+
+  .nav-option a {
+    margin-left: 0.75rem;
+    font-size: 1rem;
+    color: #fff;
+  }
+
+  .nav-option:hover {
+    opacity: 1;
+  }
+
+  .nav-library {
+    background-color: #212121;
+    border-radius: 1rem;
+    /* height: 10rem; */
+    margin: 0.5rem;
+    color: #fff;
+    padding: 0.8rem 1rem;
+  }
+
+  .nav-library .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+
+  .nav-library .header .nav-option {
+    margin-left: 0.75rem;
+  }
+
+  .nav-library .header .lab-icons {
+    display: flex;
+  }
+  .nav-library .header .lab-icons i {
+    margin: 0 0.5rem;
+  }
+
+  .nav-library img {
+    height: 1rem;
+    width: 1rem;
+  }
+  .nav-library a {
+    margin-left: 0.75rem;
+    font-size: 1rem;
+  }
+
+  .library-box {
+    background-color: #313131;
+    /* height: 7rem; */
+    border-radius: 1rem;
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  .library-box .p1 {
+    font-weight: bold;
+    line-height: 2rem;
+    font-size: 1.2rem;
+  }
+  .library-box .p2 {
+    font-size: 0.9rem;
+    line-height: 2rem;
+    opacity: 0.7;
+  }
+  .library-box button {
+    font-weight: 600;
+    align-self: flex-start;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.3rem 1rem;
+    transition: all 0.5s ease;
+  }
+  .library-box button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px #fff;
+  }
+
+  .main-content .nav-bar {
+    border-radius: 1rem;
+    padding: 0.7rem 0.5rem;
+    position: sticky;
+    top: 0;
+
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #21212188;
+    backdrop-filter: blur(10px);
+  }
+
+  .nav-left {
+    margin-left: 1rem;
+    display: flex;
+  }
+
+  .nav-left .icon {
+    margin: 0 0.2rem;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    border-radius: 100px;
+    background-color: black;
+    opacity: 0.4;
+  }
+
+  .nav-left .icon img {
+    width: 1rem;
+  }
+
+  .nav-left .icon:hover {
+    opacity: 0.9;
+  }
+  .nav-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+  }
+  .nav-right .btn {
+    margin: 0 0.3rem;
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 3rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    transition: all ease 0.3s;
+    display: none;
+  }
+
+  .btn-icon {
+    margin: 0 0.3rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 3rem;
+    font-weight: 600;
+    padding: 0.7rem 1rem;
+    transition: all ease 0.3s;
+    opacity: 0.4;
+    color: #fff;
+    background-color: #00000000;
+  }
+
+  .btn-icon:hover {
+    opacity: 1;
+  }
+
+  .btn-black {
+    background-color: #000;
+    opacity: 0.6;
+    color: white;
+  }
+
+  .btn:hover {
+    transform: scale(1.1);
+  }
+
+  .cards {
+    color: #fff;
+    margin: 1.5rem 3rem;
+    margin: 0.4rem;
+  }
+
+  .cards h2 {
+    font-size: 1.7rem;
+    margin: 1rem 0;
+  }
+
+  .card-container {
+    overflow-x: scroll;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0px;
+    width: 350px;
+    white-space: nowrap;
+  }
+
+  .card {
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    background-color: #313131;
+    border-radius: 1rem;
+    width: 250px;
+    padding: 1rem;
+    transition: all ease 0.5s;
+  }
+
+  .card:hover {
+    background-color: #141414;
+  }
+
+  .card img {
+    border-radius: 1rem;
+    width: 100%;
+  }
+
+  .card-title {
+    margin: 0.6rem 0;
+    font-size: 1.3rem;
+  }
+  .card-detail {
+    overflow: hidden;
+    width: 100%;
+    font-size: 0.8rem;
+    opacity: 0.7;
+  }
+
+  .footer {
+    font-size: 0.8rem;
+    margin: 3rem;
+    height: 10vh;
+    text-align: center;
+    color: #fff;
+    opacity: 0.6;
+  }
+
+  .music-player {
+    height: 5rem;
+    background-color: #000;
+    display: flex;
+    color: #fff;
+  }
+
+  .music-left {
+    padding: 0 1rem;
+    flex: 1;
+    /* border: 3px solid red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    display: none;
+  }
+
+  .music-left img {
+    height: 80%;
+  }
+
+  .music-left p {
+    font-size: 0.8rem;
+  }
+  .music-main {
+    width: 100%;
+    /* border: 3px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .music-right {
+    padding: 0 1rem;
+    flex: 1;
+    /* border: 3px solid red; */
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    align-items: center;
+    display: none;
+  }
+
+  .play-upper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .play-upper img {
+    margin: 0 1rem;
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+
+  .big-icon img {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .play-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+  }
+
+  .play-bar #bar {
+    flex: 1;
+    height: 2px;
+    margin: 5px 0.7rem 6px 0.7rem;
+  }
+}
